@@ -8,11 +8,9 @@ We do not assume P = NP or P != NP. Every proposed argument is treated as a conj
 We prioritize explicit mathematics, proof audits, counterexample searches, formal verification, and recording failed approaches.
 
 ## Current research target
-Polynomial Self-Reference Lemma (PSRL).
+The first diagonalization idea has now been audited. Its unrestricted fixed-point form is invalid, and the stronger "candidate compressor" formulation is essentially equivalent to P vs NP rather than an easier intermediate theorem.
 
-Given a polynomial-time candidate-set function f for SAT, can we construct in polynomial time a satisfiable formula phi_f such that f(phi_f) contains no satisfying assignment of phi_f?
-
-A successful proof could yield P != NP. This lemma is OPEN here; no proof is claimed.
+The next goal is to identify a strictly weaker structural theorem whose proof would still give new information about SAT but would not simply restate P != NP.
 
 ## Rules
 1. Never label an argument a proof until every step is justified.
@@ -26,6 +24,6 @@ A successful proof could yield P != NP. This lemma is OPEN here; no proof is cla
 
 ## Status
 - P vs NP: OPEN
-- PSRL: OPEN
 - Finite candidate-list exclusion: PROVED
-- Unrestricted literal fixed-point claim for the diagonal construction: DISPROVED
+- Arbitrary syntactic fixed point for the diagonal construction: DISPROVED
+- Compressor formulation as a route to P != NP: equivalent in strength to the target; not an independent proof
